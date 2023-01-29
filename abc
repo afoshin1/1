@@ -1,1 +1,13 @@
+import sys
+from PyQt5.QtWidgets import *
 
+def application(): #главная функция
+    app = QApplication(sys.argv) #создание приложения
+    window = QMainWindow() #создание окна
+
+    window.resize(500,500) #размер
+    window.setWindowTitle("app") #название
+    window.setGeometry(300,250,500,500) #смещение и размер
+
+    window.show() #показывется окно
+    sys.exit(app.exec_()) #коректное завершение программы
